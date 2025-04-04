@@ -1,0 +1,454 @@
+.index {
+    padding: 0 0 20px 0;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.header {
+    background: linear-gradient(135deg, #4a90e2, #7f7fd5);
+    color: #fff;
+    padding: 25px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.tab-item {
+    flex: 1;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+}
+
+.tab-item.active {
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.tab-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background-color: #4a90e2;
+    border-radius: 3px;
+}
+
+.tab-content {
+    padding: 0 15px;
+    height: calc(100vh - 120px);
+}
+
+/* 行程概览 */
+.overview-content {
+    padding-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.day-plan {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.day-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.timeline {
+    padding-left: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4a90e2;
+    z-index: 1;
+}
+
+.timeline-item:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 16px;
+    width: 2px;
+    height: calc(100% - 16px);
+    background-color: #e0e0e0;
+}
+
+.timeline-item:last-child:after {
+    display: none;
+}
+
+.time {
+    font-weight: bold;
+    color: #4a90e2;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.content .event {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.content .desc {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    line-height: 1.4;
+}
+
+/* 景点推荐 */
+.attractions-content {
+    padding-bottom: 20px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0 10px;
+    padding-left: 10px;
+    border-left: 4px solid #4a90e2;
+}
+
+.attraction-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.attraction-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.attraction-title .name {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tag {
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: #e8f3ff;
+    color: #4a90e2;
+}
+
+.tag.hot {
+    background-color: #ffecec;
+    color: #ff5252;
+}
+
+.address {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.description {
+    display: block;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.tips {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tip-item {
+    margin-right: 15px;
+    font-size: 13px;
+    color: #888;
+}
+
+/* 美食住宿 */
+.food-accommodation-content {
+    padding-bottom: 20px;
+}
+
+.food-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.food-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.food-desc {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.recommend {
+    display: block;
+    font-size: 13px;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.hotel-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.hotel-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.hotel-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-item {
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.hotel-item:last-child {
+    border-bottom: none;
+}
+
+.hotel-name {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.hotel-price, .hotel-location {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+/* 交通指南 */
+.transportation-content {
+    padding-bottom: 20px;
+}
+
+.route-header {
+    margin-bottom: 15px;
+}
+
+.route-name {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.route-stats {
+    display: block;
+    font-size: 13px;
+    color: #666;
+}
+
+.route-detail {
+    position: relative;
+    padding: 5px 0 15px 0;
+}
+
+.point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.point-marker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.point-marker.start {
+    background-color: #4CAF50;
+}
+
+.point-marker.end {
+    background-color: #F44336;
+}
+
+.point-text {
+    font-size: 13px;
+    color: #666;
+}
+
+.route-path {
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    width: 2px;
+    height: calc(100% - 45px);
+    background-color: #e0e0e0;
+    z-index: 0;
+}
+
+.direction-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.direction-steps {
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    font-size: 13px;
+    color: #666;
+    padding: 6px 0;
+    line-height: 1.4;
+    border-bottom: 1px dashed #eee;
+}
+
+.step:last-child {
+    border-bottom: none;
+}
+
+.public-transport {
+    display: flex;
+    flex-direction: column;
+}
+
+.transport-option {
+    margin-bottom: 15px;
+}
+
+.option-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.option-detail {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.travel-tips {
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-item {
+    margin-bottom: 12px;
+}
+
+.tip-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.tip-content {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+}
